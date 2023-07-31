@@ -1,5 +1,5 @@
 <template>
-    <di>
+    <div>
         <h1>Panama</h1>
-    </di>
+    </div>
 </template>

@@ -30,6 +30,10 @@ const router = createRouter({
             name: 'Panama',
             component : () => import('@/views/Panama.vue')
 
+        },
+        {
+            path : '/destination/:id',
+            component : () => import('@/views/Destination.vue')
         }
     ]
 })
