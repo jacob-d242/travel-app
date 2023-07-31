@@ -33,6 +33,7 @@ const router = createRouter({
         },
         {
             path : '/destination/:id',
+            name: 'destination.show',
             component : () => import('@/views/Destination.vue')
         }
     ]

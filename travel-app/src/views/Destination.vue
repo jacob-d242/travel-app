@@ -1,8 +1,12 @@
 <template>
-    <div>
+    <section class="destination">
        <h1>{{ destination.name }}</h1>
-       <img :src="`/images/${destination.image}`" />
-    </div>
+       <div class="destination-details">
+         <img :src="`/images/${destination.image}`" :alt="destination.name"/>
+         <p>{{ destination.description }}</p>
+       </div>
+      
+    </section>
 </template>
 <script>
 import sourceData from '@/data.json'
