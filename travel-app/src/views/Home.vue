@@ -5,10 +5,10 @@
             <router-link
                 v-for="destination in destinations"
                 :key="destination.id"
-                :to="{name : 'destination.show',params:{id : destination.id}}"
+                :to="{name : 'destination.show',params:{id : destination.id , slig: destination.slug}}"
             >
             <h1>{{ destination.name }}</h1>
-            <img :src="`/images/${destination.image}`" alt="`destination.name`"/>
+            <img  :src="`/images/${destination.image}`" alt="`destination.name`" class="img"/>
             </router-link>
         </div>
     </div>

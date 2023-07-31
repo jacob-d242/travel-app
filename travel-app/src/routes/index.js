@@ -11,28 +11,7 @@ const router = createRouter({
             component: Home
         },
         {
-            path: '/brazil',
-            name: 'Brazil',
-            component : () => import('@/views/Brazil.vue')
-        },
-        {
-            path: '/hawaii',
-            name: 'Hawai',
-            component : ()=> import('@/views/Hawai.vue')
-        },
-        {
-            path: '/jamaica',
-            name: 'Jamaica',
-            component : () => import('@/views/Jamaica.vue')
-        },
-        {
-            path: '/panama',
-            name: 'Panama',
-            component : () => import('@/views/Panama.vue')
-
-        },
-        {
-            path : '/destination/:id',
+            path : '/destination/:id/:slug',
             name: 'destination.show',
             component : () => import('@/views/Destination.vue')
         }
